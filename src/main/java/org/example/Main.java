@@ -25,4 +25,17 @@ public class Main {
             }
         }
     }
+
+    public static int sum (int...numbers){
+        int  sum = 10;
+        for (int number : numbers){
+            sum += number;
+        }
+        return sum;
+    }
+
+    public static int divide(int a, int b){
+        return a/b;
+
+    }
 }

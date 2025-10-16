@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Bag all testes" verbose="1">
+    <test name="All tests for bag">
+        <classes>
+            <class name="CalculateFinalPriceTests"/>
+            <class name="CalculateDiscountTests"/>
+            <class name="PresentOfZipperTests"/>
+        </classes>
+    </test>
+</suite>
