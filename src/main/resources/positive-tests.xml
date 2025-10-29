@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Bag, positive testes" verbose="1">
+    <test name="Positive test suit">
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="CalculateFinalPriceTests"/>
+            <class name="CalculateDiscountTests"/>
+            <class name="PresentOfZipperTests"/>
+        </classes>
+    </test>
+</suite>

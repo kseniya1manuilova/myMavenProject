@@ -8,6 +8,10 @@ public class Bag extends StorageType {
     protected boolean hasZipper;
 
     public Bag(String material, double price, double discount, boolean hasZipper, String collectionName) {
+        if (price < 0) {
+            throw new IllegalArgumentException("Price cannot be negative");
+        }
+
         this.material = material;
         this.price = price;
         this.discount = discount;
@@ -19,7 +23,7 @@ public class Bag extends StorageType {
         calculateFinalPrice();
     }
 
-    public Bag(String material, double price, String string, String discount, String collectionName) {
+    public Bag(String material, double price, String discount, String collectionName) {
         this.material = material;
         this.price = price;
         calculateFinalPrice();
@@ -51,7 +55,7 @@ public class Bag extends StorageType {
 
     public String ContainZipper() {
         if (hasZipper = true) {
-            return "This bad has a zipper.";
+            return "This bag has a zipper.";
         } else return "This bad hasn't a zipper.";
     }
 
